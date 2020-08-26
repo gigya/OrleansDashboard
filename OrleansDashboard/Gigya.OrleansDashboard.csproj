@@ -15,6 +15,7 @@
     <PackageTags>orleans dashboard metrics monitor</PackageTags>
     <RepositoryUrl>https://github.com/OrleansContrib/OrleansDashboard</RepositoryUrl>
     <Version>$(DashboardVersion)</Version>
+    <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
   </PropertyGroup>
 
   <ItemGroup>
@@ -46,6 +47,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OrleansDashboard.Core\OrleansDashboard.Core.csproj" />
+    <ProjectReference Include="..\OrleansDashboard.Core\OrleansDashboard.Core.csproj" >
+        <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <IncludeAssets>OrleansDashboard.Core.dll</IncludeAssets>
+    </ProjectReference>
+
   </ItemGroup>
+  <Target DependsOnTargets="ResolveReferences" Name="CopyProjectReferencesToPackage">
+    <ItemGroup>
+      <BuildOutputInPackage Include="@(ReferenceCopyLocalPaths->WithMetadataValue('ReferenceSourceTarget', 'ProjectReference'))"/>
+    </ItemGroup>
+  </Target>
 </Project>
