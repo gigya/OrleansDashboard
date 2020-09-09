@@ -2,12 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyVersion>$(DashboardVersion)</AssemblyVersion>
+    <AssemblyVersion>4.0.5</AssemblyVersion>
     <Authors>OrleansContrib</Authors>
     <Company>OrleansContrib</Company>
     <Copyright>Copyright © 2019</Copyright>
     <Description>An admin dashboard for Microsoft Orleans</Description>
-    <FileVersion>$(DashboardVersion)</FileVersion>
+    <FileVersion>4.0.5</FileVersion>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageIcon>OrleansLogo.png</PackageIcon>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -15,7 +15,7 @@
     <PackageTags>orleans dashboard metrics monitor</PackageTags>
     <RepositoryUrl>https://github.com/OrleansContrib/OrleansDashboard</RepositoryUrl>
     <RootNamespace>OrleansDashboard</RootNamespace>
-    <Version>$(DashboardVersion)</Version>
+    <Version>4.0.5</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -26,6 +26,6 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="OrleansLogo.png" Pack="true" PackagePath="\"/>
+    <None Include="OrleansLogo.png" Pack="true" PackagePath="\" />
   </ItemGroup>
 </Project>
