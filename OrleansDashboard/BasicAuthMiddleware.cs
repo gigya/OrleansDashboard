@@ -37,7 +37,7 @@ namespace OrleansDashboard
 
             context.Response.StatusCode = StatusCodes.Status401Unauthorized;
             context.Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = "Unauthorized";
-            context.Response.Headers.Add("WWW-Authenticate", new[] { "Basic realm=\"Gigya.OrleansDashboard\"" });
+            context.Response.Headers.Add("WWW-Authenticate", new[] { "Basic realm=\"Gigya.OrleansDashboard.NetStandard\"" });
 
             return Task.CompletedTask;
         }

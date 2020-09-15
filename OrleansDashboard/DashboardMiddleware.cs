@@ -280,7 +280,7 @@ You are connected to the Orleans Dashboard log streaming service
 
             return file.Exists
                 ? file.OpenRead()
-                : assembly.GetManifestResourceStream($"Gigya.OrleansDashboard.{name}");
+                : assembly.GetManifestResourceStream($"Gigya.OrleansDashboard.NetStandard.{name}");
         }
     }
 }

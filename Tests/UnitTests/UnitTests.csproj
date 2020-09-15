@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\OrleansDashboard\Gigya.OrleansDashboard.csproj" />
+    <ProjectReference Include="..\..\OrleansDashboard\Gigya.OrleansDashboard.NetStandard.csproj" />
     <ProjectReference Include="..\TestGrains\TestGrains.csproj" />
   </ItemGroup>
 
