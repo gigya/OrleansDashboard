@@ -10,7 +10,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\OrleansDashboard\OrleansDashboard.csproj" />
+    <ProjectReference Include="..\..\OrleansDashboard.Core\OrleansDashboard.Core.csproj" />
+    <ProjectReference Include="..\..\OrleansDashboard\Gigya.OrleansDashboard.NetStandard.csproj" />
   </ItemGroup>
 
 </Project>

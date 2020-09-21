@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28711.60
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrleansDashboard", "OrleansDashboard\OrleansDashboard.csproj", "{D10D584C-93F0-45C7-AB85-F8461CA91282}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gigya.OrleansDashboard.NetStandard", "OrleansDashboard\Gigya.OrleansDashboard.NetStandard.csproj", "{D10D584C-93F0-45C7-AB85-F8461CA91282}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestGrains", "Tests\TestGrains\TestGrains.csproj", "{2AF80447-CF9D-46ED-8468-A2A4BBA76776}"
 EndProject
